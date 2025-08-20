@@ -22,10 +22,10 @@ import shutil
 
 app = FastAPI()
 
-# CORS so React can talk to backend
+
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],  # in prod, replace with frontend URL
+    allow_origins=["*"],  
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
